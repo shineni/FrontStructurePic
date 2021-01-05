@@ -1,0 +1,119 @@
+.main{
+    overflow: hidden;
+    .box{
+        position: relative;
+        width: 400px;
+        margin: 100px auto;
+        border-bottom: 1px solid #ccc;
+    }
+    .box label{
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+    .box input {
+        width: 350px;
+        height: 30px;
+        border:0;
+        outline: none;
+
+    }
+
+    .change {
+        background-color: yellow;
+        color: #fff;
+        font-size: 25px;
+    }
+    .tab{
+        .tab_list{
+            ul{
+                list-style: none;
+                padding:0;
+                margin:0;
+            }
+            li{
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+            }
+            // li:hover{
+            //     background-color: #bfa;
+            //     color:#999;
+            //     font-weight: bold;
+            // }
+            .current {
+                background-color: red;
+            }
+
+        }
+        .tab_con{
+            .item{
+                display: none;
+            }
+        }
+    }
+    #messageModal {
+        ul li  a{
+            float: right;
+        }
+    }
+    #mouseEvent img {
+        position: absolute;
+        height: 50px;
+    }
+    #search{
+        position: relative;
+        width: 178px;
+        margin: 100px;
+        .con{
+            display: none;
+            position: absolute;
+            top: -40px;
+            width: 171px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 0 20px 4px rgba(0, 0, 0, .2);
+            padding: 5px 0;
+            font-size: 18px;
+            line-height: 20px;
+            color: #333;
+
+        }
+        .con::before {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top:28px;
+            left: 18px;
+            border: 8px solid #000;
+            border-style: solid dashed dashed;
+            border-color: #fff transparent transparent;
+        }
+        .jd{
+
+        }
+
+
+    }
+    #onResizeEvent {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+    #timer {
+        span {
+            display: inline-block;
+            margin: 5px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #333;
+            color:#fff
+        }
+    }
+}
